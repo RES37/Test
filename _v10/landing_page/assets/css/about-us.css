@@ -1,0 +1,140 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #ccc;
+}
+
+/* TOP */
+.topnav {
+    position: fixed;
+    height: 4.5em;
+    top: 0em;
+    right: 0em;
+    bottom: 0em;
+    left: 0em;
+    overflow: hidden;
+    background-color: #111111;
+}
+.active1, .active2, a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.about-us {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.split1 {
+    float: left;
+    background: hsla(266, 100%, 54%, 1);
+    background: linear-gradient(180deg, hsla(266, 100%, 54%, 1) 1%, hsla(297, 56%, 50%, 1) 50%, hsla(0, 97%, 54%, 1) 100%);
+    background: -moz-linear-gradient(180deg, hsla(266, 100%, 54%, 1) 1%, hsla(297, 56%, 50%, 1) 50%, hsla(0, 97%, 54%, 1) 100%);
+    background: -webkit-linear-gradient(180deg, hsla(266, 100%, 54%, 1) 1%, hsla(297, 56%, 50%, 1) 50%, hsla(0, 97%, 54%, 1) 100%);
+    color: white;
+    font-weight: bolder;
+}
+/* .topnav a.split2 {
+    float: right;
+    background: hsla(266, 100%, 54%, 1);
+    background: linear-gradient(180deg, hsla(266, 100%, 54%, 1) 1%, hsla(297, 56%, 50%, 1) 50%, hsla(0, 97%, 54%, 1) 100%);
+    background: -moz-linear-gradient(180deg, hsla(266, 100%, 54%, 1) 1%, hsla(297, 56%, 50%, 1) 50%, hsla(0, 97%, 54%, 1) 100%);
+    background: -webkit-linear-gradient(180deg, hsla(266, 100%, 54%, 1) 1%, hsla(297, 56%, 50%, 1) 50%, hsla(0, 97%, 54%, 1) 100%);
+    color: white;
+} */
+
+/* MIDDLE */
+main {
+    background-image: url("../img/bg_image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 4.5em;
+    position: absolute;
+    height: 100%;
+    top: 0em;
+    right: 0em;
+    bottom: 0em;
+    left: 0em;
+    z-index: -1;
+    color: white;
+    text-align: center;
+}
+.title {
+    margin-top: 0.75em;
+    font-size: 3em;
+    font-weight: bold;
+}
+.line {
+    background-color: white;
+    border: white solid 0.125em;
+    border-radius: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 1.25em;
+    width: 20em;
+    height: 0.25em;
+}
+.description {
+    margin-left: auto;
+    margin-right: auto;
+    width: 45em;
+    font-size: 1.25em;
+}
+/* Animation Type 1 */
+@keyframes slideToTop {
+    from {
+        transform: translateY(15em);
+    }
+    to {
+        transform: translateY(0em);
+    }
+}
+.vision, .mission {
+    /* Animation Properties 
+    animation-name: slideToBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none; */
+
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0.75em 1em 1em #111111;
+    color: #111111;
+    border-radius: 2em;
+    margin-top: 1.5em;
+    width: 15em;
+    height: 12em;
+    padding-top: 1em;
+    font-size: 2em;
+    font-weight: bolder;
+}
+.vision {
+    float: left;
+    margin-left: 6em;
+}
+.mission {
+    float: right;
+    margin-right: 6em;
+}
+.the-vision, .the-mission {
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 0.75em;
+    text-align: justify;
+}
+
+/* BOTTOM */
+/* footer {
+    margin-top: 60em;
+} */
